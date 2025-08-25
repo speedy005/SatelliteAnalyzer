@@ -1,4 +1,4 @@
-# CiefpSatelliteAnalyzer.py
+# SatelliteAnalyzer.py
 from enigma import eServiceCenter, eServiceReference, iServiceInformation, eTimer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
 from Screens.Screen import Screen
@@ -13,11 +13,11 @@ import xml.etree.ElementTree as ET
 
 class SatelliteAnalyzer(Screen):
     skin = """
-    <screen name="SatelliteAnalyzer" position="center,center" size="1800,900" title="..:: Ciefp Satellite Analyzer ::..">
+    <screen name="SatelliteAnalyzer" position="center,center" size="1800,900" title="..:: Satellite Analyzer ::..">
         <!-- Pozadina desno -->
         <eLabel position="1400,0" size="400,900" backgroundColor="#0D1B36" zPosition="-1" />
         <!-- Logo (400x400) -->
-        <widget name="background" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CiefpSatelliteAnalyzer/background.png" position="1400,0" size="400,400" />
+        <widget name="background" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SatelliteAnalyzer/background.png" position="1400,0" size="400,400" />
         <!-- Naslov -->
         <widget source="Title" render="Label" position="1400,420" size="400,50" 
                 font="Regular;30" halign="center" valign="center" foregroundColor="white" backgroundColor="#0D1B36" />
@@ -37,9 +37,9 @@ class SatelliteAnalyzer(Screen):
                 font="Console;24" transparent="1" />
         <!-- DONJI DEO: SNR i AGC TRAKE -->
         <widget name="snr_label" position="20,820" size="100,24" font="Regular;20" halign="left" valign="center" foregroundColor="white" />
-        <widget name="snr_bar" position="120,820" size="1180,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CiefpSatelliteAnalyzer/icon_snr.png" borderWidth="2" borderColor="green" />
+        <widget name="snr_bar" position="120,820" size="1180,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SatelliteAnalyzer/icon_snr.png" borderWidth="2" borderColor="green" />
         <widget name="agc_label" position="20,864" size="100,24" font="Regular;20" halign="left" valign="center" foregroundColor="white" />
-        <widget name="agc_bar" position="120,864" size="1180,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CiefpSatelliteAnalyzer/icon_agc.png" borderWidth="2" borderColor="green" />
+        <widget name="agc_bar" position="120,864" size="1180,24" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SatelliteAnalyzer/icon_agc.png" borderWidth="2" borderColor="green" />
     </screen>
     """
 
