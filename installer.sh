@@ -6,12 +6,12 @@ version='1.0'
 changelog='\nFix little bugs\nUpdated Picons List'
 ##############################################################
 
-TMPPATH=/tmp/CiefpSatelliteAnalyzer
+TMPPATH=/tmp/SatelliteAnalyzer
 
 if [ ! -d /usr/lib64 ]; then
-	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/CiefpSatelliteAnalyzer
+	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/SatelliteAnalyzer
 else
-	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/CiefpSatelliteAnalyzer
+	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/SatelliteAnalyzer
 fi
 
 # check depends packges
@@ -77,9 +77,9 @@ else
    echo ""
    echo ""
 fi
-   wget https://github.com/ciefp/CiefpSatelliteAnalyzer/archive/refs/heads/main.tar.gz
+   wget https://github.com/speedy005/SatelliteAnalyzer/archive/refs/heads/main.tar.gz
    tar -xzf main.tar.gz
-   cp -r 'CiefpSatelliteAnalyzer-main/usr' '/'
+   cp -r 'SatelliteAnalyzer-main/usr' '/'
 set +e
 cd
 sleep 2
@@ -95,8 +95,9 @@ sync
 echo ""
 echo ""
 echo "#########################################################"
-echo "#     CiefpSatelliteAnalyzer INSTALLED SUCCESSFULLY     #"
+echo "#     SatelliteAnalyzer INSTALLED SUCCESSFULLY          #"
 echo "#                  developed by ciefp                   #"
+echo "#                  mod by speedy005                     #"
 echo "#                   Big thanks Qu4k3                    #"
 echo "#                  .::ciefpsettings::.                  #"
 echo "#                  https://Sat-Club.EU                  #"
